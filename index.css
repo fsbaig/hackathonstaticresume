@@ -1,0 +1,145 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #f0f2f5, #d9e7ff);
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.header {
+    text-align: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #007BFF;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #007BFF;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    display: block;
+    margin: 0 auto 15px;
+    object-fit: cover;
+    filter: grayscale(50%); /* Add grayscale to the image for an elegant effect */
+}
+
+.profile-pic:hover {
+    transform: scale(1.1); /* Slightly increase size on hover */
+    box-shadow: 0 15px 30px rgba(0, 123, 255, 0.7); /* Stronger shadow on hover */
+    filter: grayscale(0); /* Remove grayscale on hover */
+    border-color: #0056b3; /* Change border color on hover */
+}
+
+
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #007BFF;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 1.5em;
+    color: #555;
+    font-style: italic;
+    margin: 5px 0 20px;
+    transition: 0.3s ease;
+    display: block;
+}
+
+.contact span {
+    display: block;
+    margin: 5px 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.pursuing {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007BFF;
+    margin-top: 10px;
+    transition: color 0.4s ease, font-size 0.4s ease; /* Added transition */
+}
+
+.pursuing:hover {
+    color: #0056b3; /* Color change on hover */
+    font-size: 1.4em; /* Slightly increase font size */
+}
+
+.education, .skills {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #007BFF;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: #007BFF;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #f0f9ff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border-left: 5px solid #007BFF;
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    background-color: #007BFF;
+    color: white;
+    box-shadow: 0 10px 20px rgba(0, 123, 255, 0.3);
+}
+
+button {
+    display: block;
+    width: 220px;
+    margin: 40px auto 0;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+}
